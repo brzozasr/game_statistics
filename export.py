@@ -37,7 +37,13 @@ def check_argv():
         else:
             return True
     else:
-        print('\033[31m', "There is missing argument!", '\033[0m')
+        print('\033[31m', "Missing argument(s)!", '\033[0m')
+        print('\033[31m', "There are 5 required arguments:", '\033[0m')
+        print('\033[31m', "- source file name (\".txt\"),", '\033[0m')
+        print('\033[31m', "- target file name (\".txt\"),", '\033[0m')
+        print('\033[31m', "- year (range from 1950 to 2050),", '\033[0m')
+        print('\033[31m', "- genre of the game (e.g. RPG),", '\033[0m')
+        print('\033[31m', "- title of the game.", '\033[0m')
         return False
 
 
