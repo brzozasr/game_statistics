@@ -12,7 +12,7 @@ game_maker = 4
 def check_path(file_name):
     current_dir = os.path.dirname(os.path.realpath(__file__))
     dir_file = os.path.join(current_dir, file_name)
-    if os.path.exists(dir_file):
+    if os.path.isfile(dir_file):
         return True, dir_file
     else:
         if file_name != "exit":
